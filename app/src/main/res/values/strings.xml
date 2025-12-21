@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Our Contacts</string>
+    <string name="login_here">Login Here</string>
+    <string name="welcome_message">Welcome to the home page</string>
+    <string-array name="country">
+        <item> Nepal </item>
+        <item> India </item>
+        <item> China </item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
