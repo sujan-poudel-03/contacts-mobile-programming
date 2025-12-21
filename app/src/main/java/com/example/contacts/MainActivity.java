@@ -1,6 +1,7 @@
 package com.example.contacts;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -125,8 +126,29 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Help selected", Toast.LENGTH_SHORT).show();
             return true;
         }
+        else if (itemId == R.id.action_exit) {
+            showSimpleDialog();
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
+
+
+    // this is for a dialog
+    private void showSimpleDialog() {
+        new AlertDialog.Builder(this)
+                .setTitle("Exit Option Selected")
+                .setMessage("You selected Exit. Continue?")
+                .setPositiveButton("Yes", (dialog, which) -> {
+                    finishAffinity(); // This will close the entire app
+                })
+//                .setPositiveButton("Yes", (dialog, which) ->
+//                        Toast.makeText(this, "Confirmed", Toast.LENGTH_SHORT).show())
+                .setNegativeButton("No", (dialog, which) -> dialog.dismiss())
+                .create()
+                .show();
+    }
+
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {

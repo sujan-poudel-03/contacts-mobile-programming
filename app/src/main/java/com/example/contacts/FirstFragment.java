@@ -1,5 +1,8 @@
 package com.example.contacts;
 
+import static androidx.core.app.ActivityCompat.finishAffinity;
+
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;

@@ -1,5 +1,8 @@
 package com.example.contacts;
 
+import static androidx.core.app.ActivityCompat.finishAffinity;
+
+import android.app.AlertDialog;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -45,6 +48,10 @@ public class FragmentHostActivity extends AppCompatActivity {
         transaction.replace(R.id.fragment_container, fragment);
         transaction.commit();
     }
+
+
+
+
 
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
