@@ -50,6 +50,9 @@ public class MainActivity extends AppCompatActivity {
         Button goToSecondActivityButton = findViewById(R.id.goToSecondActivityButton);
         Button goToEventsDemoButton = findViewById(R.id.goToEventsDemoButton);
         Button goToFragmentHostButton = findViewById(R.id.goToFragmentHostButton);
+        Button goListViewButton = findViewById(R.id.goListViewButton);
+        Button goGridViewButton = findViewById(R.id.goGridViewButton);
+        Button goRecyclerViewButton = findViewById(R.id.goRecyclerViewButton);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -101,6 +104,30 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, FragmentHostActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        goListViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        goGridViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, GridViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        goRecyclerViewButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
                 startActivity(intent);
             }
         });

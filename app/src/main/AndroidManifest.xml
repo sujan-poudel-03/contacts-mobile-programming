@@ -39,6 +39,18 @@
             android:name=".FragmentHostActivity"
             android:exported="false"/>
 
+        <activity
+            android:name=".ListViewActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".GridViewActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".RecyclerViewActivity"
+            android:exported="false"/>
+
     </application>
 
 </manifest>
