@@ -53,6 +53,8 @@ public class MainActivity extends AppCompatActivity {
         Button goListViewButton = findViewById(R.id.goListViewButton);
         Button goGridViewButton = findViewById(R.id.goGridViewButton);
         Button goRecyclerViewButton = findViewById(R.id.goRecyclerViewButton);
+        Button goSqliteButton = findViewById(R.id.goSqliteButton);
+        Button goApiButton = findViewById(R.id.goApiButton);
 
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,6 +130,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        goSqliteButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SqliteActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        goApiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ApiActivity.class);
                 startActivity(intent);
             }
         });

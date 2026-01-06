@@ -20,7 +20,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recycler_view);
 
         // Data to display
-        String[] foodList = {"Fulki", "Pani Puri", "Chawmin", "PIZZA", "MOMO", "Samosa", "Pakauda"};
+        String[] foodList = {"Fulki", "Pani Puri", "Chowmin", "PIZZA", "MOMO", "Samosa", "Pakauda"};
         String[] foodPriceList = {"200", "300", "400", "500", "600", "700", "800"};
 
         // Set up RecyclerView
@@ -58,6 +58,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
+
             return foodList.length;
         }
 
